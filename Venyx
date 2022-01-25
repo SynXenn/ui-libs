@@ -1,6 +1,7 @@
 -- init
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
+local randomName = math.random(1,99999999)
 
 -- services
 local input = game:GetService("UserInputService")
@@ -213,8 +214,8 @@ do
 	
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
-			Name = title,
-      syn.protect_gui(title)
+			Name = randomName,
+      			syn.protect_gui(randomName)
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
