@@ -214,7 +214,7 @@ do
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-      			syn.protect_gui(container)
+      			syn.protect_gui(title)
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
