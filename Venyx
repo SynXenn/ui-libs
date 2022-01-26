@@ -213,8 +213,7 @@ do
 	
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
-			Name = title,
-      			syn.protect_gui(title)
+			Name = game:GetService("HttpService"):GenerateGUID(),
 			Parent = game.CoreGui
 		}, {
 			utility:Create("ImageLabel", {
@@ -2169,5 +2168,5 @@ do
 	end
 end
 
-print("just xen was here :)")
+print("justXen was here :)")
 return library
