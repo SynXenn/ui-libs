@@ -400,7 +400,7 @@ function Library:create(options)
 		Name = "Mercury",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "h"
+		Link = "ViceHUB"
 	}, options)
 	
 	if getgenv and getgenv().MercuryUI then
