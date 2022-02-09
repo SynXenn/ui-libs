@@ -52,8 +52,8 @@ local Library = {
 	WelcomeText = nil,
 	DisplayName = nil,
 	DragSpeed = 0.06,
-	LockDragging = false,
-	ToggleKey = Enum.KeyCode.Home,
+	LockDragging = true,
+	ToggleKey = Enum.KeyCode.RightShift,
 	UrlLabel = nil,
 	Url = nil
 
@@ -381,7 +381,7 @@ function Library:create(options)
 	}
 
 	options = self:set_defaults({
-		Name = "Home",
+		Name = "Vice",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "ViceHUB"
@@ -607,7 +607,7 @@ function Library:create(options)
 		Position = UDim2.new(0, 5, 1, -6),
 		Size = UDim2.new(0.2, 0, 0, 10),
 		Font = Enum.Font.SourceSans,
-		Text = "Status | Idle",
+		Text = "Status | Undetected",
 		Theme = {TextColor3 = "Tertiary"},
 		TextSize = 14,
 		TextXAlignment = Enum.TextXAlignment.Left
@@ -834,7 +834,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.RightShift,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
@@ -854,7 +854,7 @@ function Library:create(options)
 		Name = "UI Drag Speed",
 		Description = "How smooth the dragging looks.",
 		Max = 20,
-		Default = 14,
+		Default = 8,
 		Callback = function(value)
 			Library.DragSpeed = (20 - value)/100
 		end,
