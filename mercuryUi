@@ -377,7 +377,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "Dark"
+		Theme = "Vice"
 	}
 
 	options = self:set_defaults({
