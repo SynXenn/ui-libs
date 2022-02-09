@@ -16,7 +16,7 @@ local Library = {
 			StrongText = Color3.fromHSV(0, 0, 1),		
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
-		Serika = {
+		Vice = {
 			Main = Color3.fromRGB(24, 24, 24),
 			Secondary = Color3.fromRGB(36,36, 36),
 			Tertiary = Color3.fromRGB(150, 0, 140),
@@ -30,22 +30,6 @@ local Library = {
 			Tertiary = Color3.fromRGB(70, 130, 180),
 
 			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Rust = {
-			Main = Color3.fromRGB(37, 35, 33),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(237, 94, 38),
-
-			StrongText = Color3.fromHSV(0, 0, 1),		
-			WeakText = Color3.fromHSV(0, 0, 172/255)
-		},
-		Aqua = {
-			Main = Color3.fromRGB(19, 21, 21),
-			Secondary = Color3.fromRGB(65, 63, 63),
-			Tertiary = Color3.fromRGB(51, 153, 137),
-
-			StrongText = Color3.fromHSV(0, 0, 1),        
 			WeakText = Color3.fromHSV(0, 0, 172/255)
 		},
 		Vaporwave = {},
@@ -397,7 +381,7 @@ function Library:create(options)
 	}
 
 	options = self:set_defaults({
-		Name = "Mercury",
+		Name = "Vice",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
 		Link = "ViceHUB"
