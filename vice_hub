@@ -100,11 +100,12 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Library = Instance.new("ScreenGui")
-Library.Name = "viceuilibrary"
+Library.Name = "93EJ-HSJ3-SIAW-4JA7"
 Library.Parent = game.CoreGui
 Library.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 if syn then
     syn.protect_gui(Library)
+    getgenv().viceHubLoaded = true
 end
 
 local uitoggled = false
@@ -1536,4 +1537,4 @@ coroutine.wrap(ONPCCUY_fake_script)()
 	return Tabs
 end
 return vice
--- last update 30.06.2022
+-- last update 30.06.2022 | 12:43 çağrı senin burdan amk
